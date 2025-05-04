@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Book, Tool, Category, Plus } from 'lucide-react';
+import { Book, BookOpen, FolderOpen, Plus } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type SidebarProps = {
@@ -29,7 +29,7 @@ export function Sidebar({ className }: SidebarProps) {
           to="/categories" 
           className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-accent-foreground/10 transition-colors"
         >
-          <Category className="mr-2 h-5 w-5" />
+          <FolderOpen className="mr-2 h-5 w-5" />
           Categorias
         </Link>
         
@@ -37,7 +37,7 @@ export function Sidebar({ className }: SidebarProps) {
           to="/tools" 
           className="flex items-center px-3 py-2 rounded-md text-sm font-medium hover:bg-accent-foreground/10 transition-colors"
         >
-          <Tool className="mr-2 h-5 w-5" />
+          <BookOpen className="mr-2 h-5 w-5" />
           Ferramentas
         </Link>
       </nav>
